@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+	<title>
+		Build a Survey Form using HTML and CSS
+	</title>
+
+	<style>
+
+		/* Styling the Body element i.e. Color,
+		Font, Alignment */
+		body {
+			background-color: #55b4af;
+			font-family: Verdana;
+			text-align: left;
+            
+		}
+
+		/* Styling the Form (Color, Padding, Shadow) */
+		form {
+			background-color: #fff;
+			max-width: 500px;
+			margin: 50px auto;
+			padding: 30px 20px;
+			box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+			border-radius: 20px;
+			;
+		}
+
+		/* Styling form-control Class */
+		.form-control {
+			text-align: left;
+			margin-bottom: 25px;
+		}
+
+		/* Styling form-control Label */
+		.form-control label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		/* Styling form-control input,
+		select, textarea */
+		.form-control input,
+		.form-control select,
+		.form-control textarea {
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			padding: 10px;
+			display: block;
+			width: 95%;
+		}
+
+		/* Styling form-control Radio
+		button and Checkbox */
+		.form-control input[type="radio"],
+		.form-control input[type="checkbox"] {
+			display: inline-block;
+			width: auto;
+		}
+
+		/* Styling Button */
+		button {
+			background-color: #05c46b;
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			font-size: 21px;
+			display: block;
+			width: 100%;
+			margin-top: 50px;
+			margin-bottom: 20px;
+			
+		}
+	</style>
+</head>
+
+<body>
+	
+	<h1>Registration Form</h1>
+	
+	<form class="form" id="form">
+		<div class="form-control">
+		  <label>Firstname*</label>
+		  <input type="text" name="" id="Firstname" placeholder="Enter Your FirstName" autocomplete="on" />
+		</div>
+		<div class="form-control">
+		  <label>Lastname</label>
+		  <input type="text" name="" id="Lastname" placeholder="Enter Your LastName" autocomplete="on" />
+		</div>
+		<div class="form-control">
+		  <label>Email*</label>
+		  <input type="email" name="" id="email" placeholder="Enter Your Email" autocomplete="off" />
+		</div>
+		<div class="form-control">
+		  <label>Password*</label>
+		  <input type="password" name="" id="Password" placeholder="Enter Password" autocomplete="off" />
+		</div>
+		<div class="form-control">
+		  <label>Confirm Password*</label>
+		  <input type="password" name="" id="cpassword" placeholder="Enter Your Password Again" autocomplete="off" />
+		</div>
+		Gender*:<br>
+		<input type="radio" type="checkbox" name="gender">Male
+		<input type="radio"  type="checkbox" name="gender">Female<br><br>
+		<span>Hobbies*:</span><br>
+		<input type="checkbox" type="checkbox" name="gender">Music
+		<input type="checkbox"  type="checkbox" name="gender">Travel
+		<input type="checkbox" type="checkbox" name="gender">Sports
+		<input type="checkbox" type="checkbox" name="gender">Movies<br><br>
+		<label for="empolyed">Source of Income
+					<select name=""  id="pet-select">
+					<option value="">Empolyed</option>
+					<option value=""></option>
+					<option value=""></option>
+					<option value=""></option>
+					<option value=""></option>
+					</select><br>
+		</label><br>
+		<span>Income</span>
+		<div class="slidecontainer">
+			<input type="range" min="1" max="100" value="0" class="slider" id="myRange">
+			<span id="rang-lable" style=" background: var(--lg-color);">20K
+			</style></span>
+		</div>
+		<br><br>
+	   
+		<span>Uplode Profile Picture</span><br>
+		<input type="file" name="" id="">
+		<span>Age</span>
+		<input type="text" placeholder="18" maxlength="50"/><br/><br>
+		Bio<br><textarea name="" id="" cols="60" rows="5"></textarea><br><hr>
+		<input type="button"  value="Create" style="padding-bottom: 5px;">
+  
+		
+		<input type="submit" value="submit" class="btn" name="" />
+	  </form>
+	</form>
+</body>
+
+</html>

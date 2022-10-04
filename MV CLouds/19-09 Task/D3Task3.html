@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function histr()
+    {
+        let ch,i;
+        var string = document.getElementById("str").value;
+        if (string.includes("ee"))
+        {
+            document.getElementById("value").innerHTML=("True");
+        }
+        else
+        {
+            document.getElementById("value").innerHTML=("Null");
+        }
+        
+    }
+</script>
+<body>
+    <h2>Enter the string</h2>
+    <input type="text" id="str"><br><br>
+    <input type="button" value="submit" onclick="histr();"><br>
+    <span id="value"></span>
+</body>
+</html>

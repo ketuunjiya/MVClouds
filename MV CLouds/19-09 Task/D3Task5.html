@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1"></p>
+    <script>
+        let a = prompt("Enter a two digit number");
+        console.log(a);
+        let b = a.toString();
+        b = b.split("");
+        b = b.reverse();
+        b = b.join("");
+        if(a>b){
+            document.getElementById("p1").innerHTML=false;
+        }
+        else
+        {
+            document.getElementById("p1").innerHTML=true;
+        }
+    </script>
+</body>
+</html>

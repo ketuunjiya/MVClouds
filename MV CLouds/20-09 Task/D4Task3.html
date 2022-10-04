@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Factor </title>
+</head>
+
+<body>
+    <input type="number" id="n" placeholder="number for factor">
+    <input type="button" value="Submit" onclick="factor()">
+    <label class="show"></label>
+</body>
+<script>
+    function factor() {
+        let num = document.getElementById("n").value;
+        for (i = 1; i <= num; i++){
+            if (num % i == 0){
+                document.write(i + " ")
+                 console.log(i)
+            }
+        }
+
+    }
+</script>
+
+</html>

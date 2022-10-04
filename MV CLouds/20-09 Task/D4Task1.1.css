@@ -1,0 +1,22 @@
+.container {
+    display: grid;
+    column-gap: 50px;
+    row-gap: 30px;
+    grid-template-columns: auto auto auto;
+    background-color: rgb(23, 222, 196);
+    padding: 30px;
+    border-radius: 70px;
+}
+.grid-items
+{
+        border: 0px solid rgba(0, 0, 0, 0.7);
+        padding: 10px;
+        text-align: center;
+    }
+
+.container .grid-items img:hover
+{
+    opacity: 0;
+    background-color:#b3d7f4 ;
+    transition: all 2s;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Lowest and Highest value </title>
+</head>
+
+<body>
+    <input type="text" id="str" placeholder="your string value">
+    <input type="button" value="Submit" onclick="sort()">
+    <label id="show"></label>
+</body>
+<script>
+    function sort() {
+        var str = document.getElementById("str").value;
+        st = str.split("")
+        console.log(st)
+        var len = str.length
+        console.log(len)
+        var min = Math.min(...st)   
+        var max = Math.max(...st)
+        console.log(min)
+        console.log(max)
+        document.write("Minimum value: "+min+ "<br>Maximum Value: "+max)
+    }
+</script>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="p1"></p>
+    <script>
+        // program to count the number of vowels in a string
+
+        function countVowel(str) {
+
+            // find the count of vowels
+            const count = str.match(/[aeiou]/gi).length;
+
+            // return number of vowels
+            return count;
+        }
+
+        // take input
+        const string = prompt('Enter a string: ');
+
+        const result = countVowel(string);
+
+        document.getElementById("p1").innerHTML=result;
+    </script>
+</body>
+
+</html>
